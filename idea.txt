@@ -1,0 +1,19 @@
+Student Evaluation
+--------------------
+
+Schema
+-----------
+Student:
+Name - string
+roll - number
+mob - number
+email - string
+honours - enum[phy,chem,math,cse,bio]
+subject - [string]
+
+Teacher:
+Name - string
+mob - number
+email - string
+user - string
+password - string
