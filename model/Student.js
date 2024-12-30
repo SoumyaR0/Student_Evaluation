@@ -1,4 +1,5 @@
 const mongoose= require('mongoose');
+const { unique } = require('next/dist/build/utils');
 const { type } = require('os');
 
 const studentSchema=new mongoose.Schema({
@@ -8,15 +9,18 @@ const studentSchema=new mongoose.Schema({
     },
     roll: {
         type: Number,
-        required: true
+        required: true,
+        unique: true
     },
     mobile:{
         type: Number,
-        required: true
+        required: true,
+        unique: true
     },
     email:{
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     honours:{
         type: String,
@@ -24,7 +28,7 @@ const studentSchema=new mongoose.Schema({
         required: true
     },
     subject:{
-        type: [String],
+        type: String,
         required: true
     }
 }
