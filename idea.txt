@@ -13,6 +13,7 @@ subject - [string]
 
 Teacher:
 Name - string
+age - number
 mob - number
 email - string
 user - string
