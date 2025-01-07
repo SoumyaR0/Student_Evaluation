@@ -19,15 +19,14 @@ const teacherSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    user:{
+    username:{
         type: String,
         required: true,
         unique: true
     },
     password:{
         type: String,
-        required: true,
-        unique: true
+        required: true
     }
 });
 
